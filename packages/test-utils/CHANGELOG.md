@@ -1,5 +1,23 @@
 # @keystonejs/test-utils
 
+## 15.0.0
+
+### Major Changes
+
+- [#5199](https://github.com/keystonejs/keystone/pull/5199) [`d8e32c50e`](https://github.com/keystonejs/keystone/commit/d8e32c50e540c9b4aa9fe0e20d3de9228cca402a) Thanks [@timleslie](https://github.com/timleslie)! - Removed unused arguments `schemaName`, `schemaNames`, `keystoneOptions`, and `graphqlOptions` from `setupServer()`.
+
+### Patch Changes
+
+- [#5198](https://github.com/keystonejs/keystone/pull/5198) [`b36758a12`](https://github.com/keystonejs/keystone/commit/b36758a121c096e8776420949c77a5304957a969) Thanks [@timleslie](https://github.com/timleslie)! - Removed the legacy `cookieSecret`, `cookie`, and `sessionStore` arguments from the `Keystone` constructor.
+
+- Updated dependencies [[`ca1be4156`](https://github.com/keystonejs/keystone/commit/ca1be415663dd822b3adda1e073bd7a1d4a9b97b), [`7ae452ad1`](https://github.com/keystonejs/keystone/commit/7ae452ad144d1186225e94ff39be0eaf9983f585), [`4d405390c`](https://github.com/keystonejs/keystone/commit/4d405390c0f8dcc37e6fe4da7ce3866c699088f3), [`b36758a12`](https://github.com/keystonejs/keystone/commit/b36758a121c096e8776420949c77a5304957a969), [`32578f01e`](https://github.com/keystonejs/keystone/commit/32578f01e70ea972d438a29fa1e3793c1e02750b)]:
+  - @keystone-next/keystone-legacy@22.0.0
+  - @keystone-next/keystone@14.0.1
+  - @keystone-next/adapter-knex-legacy@13.2.3
+  - @keystone-next/adapter-mongoose-legacy@11.1.3
+  - @keystone-next/adapter-prisma-legacy@4.0.1
+  - @keystone-next/app-graphql-legacy@7.0.1
+
 ## 14.0.1
 
 ### Patch Changes

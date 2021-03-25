@@ -1,5 +1,25 @@
 # @keystonejs/keystone
 
+## 22.0.0
+
+### Major Changes
+
+- [#5196](https://github.com/keystonejs/keystone/pull/5196) [`ca1be4156`](https://github.com/keystonejs/keystone/commit/ca1be415663dd822b3adda1e073bd7a1d4a9b97b) Thanks [@timleslie](https://github.com/timleslie)! - Removed legacy method `.getAdminMeta` from `Keystone`, `List` and `Field` classes.
+
+* [#5220](https://github.com/keystonejs/keystone/pull/5220) [`7ae452ad1`](https://github.com/keystonejs/keystone/commit/7ae452ad144d1186225e94ff39be0eaf9983f585) Thanks [@timleslie](https://github.com/timleslie)! - Removed the legacy `keystone.createAuthStrategy()` method.
+
+- [#5208](https://github.com/keystonejs/keystone/pull/5208) [`4d405390c`](https://github.com/keystonejs/keystone/commit/4d405390c0f8dcc37e6fe4da7ce3866c699088f3) Thanks [@timleslie](https://github.com/timleslie)! - Removed legacy property `List.views` and method `Field.extendAdminViews()`.
+
+* [#5198](https://github.com/keystonejs/keystone/pull/5198) [`b36758a12`](https://github.com/keystonejs/keystone/commit/b36758a121c096e8776420949c77a5304957a969) Thanks [@timleslie](https://github.com/timleslie)! - Removed the legacy `cookieSecret`, `cookie`, and `sessionStore` arguments from the `Keystone` constructor.
+
+- [#5195](https://github.com/keystonejs/keystone/pull/5195) [`32578f01e`](https://github.com/keystonejs/keystone/commit/32578f01e70ea972d438a29fa1e3793c1e02750b) Thanks [@timleslie](https://github.com/timleslie)! - Removed legacy method `Keystone.getAdminViews()`.
+
+### Patch Changes
+
+- Updated dependencies [[`97609a623`](https://github.com/keystonejs/keystone/commit/97609a623334fd8d7b9e24dd099abda2e2a37853)]:
+  - @keystone-next/utils-legacy@8.0.0
+  - @keystone-next/access-control-legacy@9.0.1
+
 ## 21.0.0
 
 ### Major Changes

@@ -1,14 +1,14 @@
 {
   "name": "@keystone-next/fields-markdown-legacy",
   "description": "KeystoneJS Markdown Field Type",
-  "version": "5.3.0",
+  "version": "6.0.0",
   "author": "The KeystoneJS Development Team",
   "license": "MIT",
   "engines": {
     "node": ">=10.0.0"
   },
   "dependencies": {
-    "@keystone-next/fields-legacy": "^23.1.0"
+    "@keystone-next/fields-legacy": "^24.0.0"
   },
   "devDependencies": {
     "@keystone-next/server-side-graphql-client-legacy": "*"
