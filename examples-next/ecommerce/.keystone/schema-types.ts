@@ -187,6 +187,8 @@ export type ProductImageRelateToOneInput = {
   readonly disconnectAll?: Scalars['Boolean'] | null;
 };
 
+export type ProductStatusType = 'DRAFT' | 'AVAILABLE' | 'UNAVAILABLE';
+
 export type UserRelateToOneInput = {
   readonly create?: UserCreateInput | null;
   readonly connect?: UserWhereUniqueInput | null;
@@ -243,24 +245,10 @@ export type ProductWhereInput = {
   readonly description_not_in?: ReadonlyArray<Scalars['String'] | null> | null;
   readonly photo?: ProductImageWhereInput | null;
   readonly photo_is_null?: Scalars['Boolean'] | null;
-  readonly status?: Scalars['String'] | null;
-  readonly status_not?: Scalars['String'] | null;
-  readonly status_contains?: Scalars['String'] | null;
-  readonly status_not_contains?: Scalars['String'] | null;
-  readonly status_starts_with?: Scalars['String'] | null;
-  readonly status_not_starts_with?: Scalars['String'] | null;
-  readonly status_ends_with?: Scalars['String'] | null;
-  readonly status_not_ends_with?: Scalars['String'] | null;
-  readonly status_i?: Scalars['String'] | null;
-  readonly status_not_i?: Scalars['String'] | null;
-  readonly status_contains_i?: Scalars['String'] | null;
-  readonly status_not_contains_i?: Scalars['String'] | null;
-  readonly status_starts_with_i?: Scalars['String'] | null;
-  readonly status_not_starts_with_i?: Scalars['String'] | null;
-  readonly status_ends_with_i?: Scalars['String'] | null;
-  readonly status_not_ends_with_i?: Scalars['String'] | null;
-  readonly status_in?: ReadonlyArray<Scalars['String'] | null> | null;
-  readonly status_not_in?: ReadonlyArray<Scalars['String'] | null> | null;
+  readonly status?: ProductStatusType | null;
+  readonly status_not?: ProductStatusType | null;
+  readonly status_in?: ReadonlyArray<ProductStatusType | null> | null;
+  readonly status_not_in?: ReadonlyArray<ProductStatusType | null> | null;
   readonly price?: Scalars['Int'] | null;
   readonly price_not?: Scalars['Int'] | null;
   readonly price_lt?: Scalars['Int'] | null;
@@ -297,7 +285,7 @@ export type ProductUpdateInput = {
   readonly name?: Scalars['String'] | null;
   readonly description?: Scalars['String'] | null;
   readonly photo?: ProductImageRelateToOneInput | null;
-  readonly status?: Scalars['String'] | null;
+  readonly status?: ProductStatusType | null;
   readonly price?: Scalars['Int'] | null;
   readonly user?: UserRelateToOneInput | null;
 };
@@ -311,7 +299,7 @@ export type ProductCreateInput = {
   readonly name?: Scalars['String'] | null;
   readonly description?: Scalars['String'] | null;
   readonly photo?: ProductImageRelateToOneInput | null;
-  readonly status?: Scalars['String'] | null;
+  readonly status?: ProductStatusType | null;
   readonly price?: Scalars['Int'] | null;
   readonly user?: UserRelateToOneInput | null;
 };
